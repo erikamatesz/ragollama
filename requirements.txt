@@ -1,0 +1,10 @@
+fastapi==0.111.0
+uvicorn==0.30.0
+faiss-cpu==1.8.0
+pypdf==4.2.0
+python-multipart==0.0.9
+pydantic==2.8.2
+requests==2.32.3
+numpy==1.26.4
+packaging==24.1
+python-dotenv==1.0.1
