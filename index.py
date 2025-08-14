@@ -144,9 +144,16 @@ def embed_texts(texts: List[str]) -> List[List[float]]:
     Gera embeddings para uma lista de textos chamando o Ollama (/api/embeddings).
 
     Observações:
-    - Trabalha item a item (simples e legível para demo).
+    - Trabalha item a item.
     - Extrai o vetor tanto do campo "embedding" quanto de "data[0].embedding",
       cobrindo os formatos mais comuns de retorno.
+
+    Exemplo:
+        >>> embed_texts(["um cachorro correndo", "uma banana amarela"])
+        [
+            [0.12, -0.34, 0.88, ...],
+            [0.45, 0.67, -0.12, ...]
+        ]
 
     Retorna:
         Lista de vetores (lista de floats).
