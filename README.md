@@ -1,7 +1,7 @@
 # Construindo um RAG local com Python e Ollama
 
 <p align="center">
-  <img src="https://alpacaglobalstore.com/cdn/shop/articles/foto_blog_sostenible-3.jpg?v=1738071396&width=3000" alt="Lhamas em campo" width="500px">
+  <img src="https://alpacaglobalstore.com/cdn/shop/articles/foto_blog_sostenible-3.jpg?v=1738071396&width=3000" alt="Lhamas em campo" width="800px">
 </p>
 
 
