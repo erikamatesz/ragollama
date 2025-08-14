@@ -1,51 +1,51 @@
-Name,User,Role,Experience,Level,Education,TechStack,Country,Languages
-Marina Azevedo,marina.azevedo,Founder & Engineer,15 years,Senior,M.Sc. in Computer Science,"Python, Java, Kubernetes",Brazil,"Portuguese, English"
-Ana Luísa Teixeira,ana.teixeira,Founder & Researcher,14 years,Senior,Ph.D. in Computer Science,"Python, NLP, Machine Learning",Brazil,"Portuguese, English"
-Emily Johnson,emily.johnson,Dev,2 years,Junior,B.Sc. in Computer Science,"Python, React, PostgreSQL",USA,"English, Spanish"
-Michael Smith,michael.smith,Dev,3 years,Junior,B.Sc. in Software Engineering,"Java, Spring Boot, MySQL",USA,"English, French"
-Olivia Brown,olivia.brown,Dev,5 years,Mid,B.Sc. in Information Systems,"Node.js, Vue.js, MongoDB",UK,"English, German"
-Daniel Miller,daniel.miller,Dev,7 years,Mid,M.Sc. in Computer Science,".NET, Angular, SQL Server",Australia,"English, Japanese"
-Sophia Wilson,sophia.wilson,Tech lead,10 years,Senior,M.Sc. in Artificial Intelligence,"Python, Django, AWS",Canada,"English, French"
-William Taylor,william.taylor,Tech lead,12 years,Senior,B.Sc. in Computer Science,"Go, Kubernetes, PostgreSQL",USA,"English, Italian"
-Sarah Anderson,sarah.anderson,Dev,6 years,Mid,M.Sc. in Software Engineering,"Java, Microservices, Docker",Brazil,"Portuguese, English"
-James Roberts,james.roberts,Dev,8 years,Mid,B.Sc. in Computer Science,"Python, FastAPI, AWS",Brazil,"Portuguese, English"
-Laura Martinez,laura.martinez,Dev,11 years,Senior,M.Sc. in Data Science,"Python, Spark, GCP",Brazil,"Portuguese, English"
-Christopher Hall,christopher.hall,Tech lead,13 years,Senior,B.Sc. in Computer Engineering,"C#, .NET, Azure",USA,"English, Spanish"
-Elizabeth Thompson,elizabeth.thompson,Tech lead,15 years,Senior,M.Sc. in Systems Architecture,"Python, Kubernetes, Terraform",UK,"English, German"
-Grace Lewis,grace.lewis,QA,1 year,Junior,B.Sc. in Computer Science,"Selenium, Postman, JIRA",Brazil,"Portuguese, English"
-Benjamin Walker,benjamin.walker,QA,2 years,Junior,B.Sc. in Software Quality,"Cypress, REST Assured, TestRail",USA,"English, Italian"
-Chloe Young,chloe.young,QA,4 years,Mid,B.Sc. in Information Systems,"Playwright, SQL, Git",Brazil,"Portuguese, English"
-Matthew Allen,matthew.allen,QA,6 years,Mid,B.Sc. in Computer Engineering,"Selenium, JMeter, Azure DevOps",Brazil,"Portuguese, English"
-Abigail King,abigail.king,QA,9 years,Senior,M.Sc. in Software Testing,"Cypress, Python, AWS",Australia,"English, French"
-Andrew Scott,andrew.scott,QA,11 years,Senior,B.Sc. in Computer Science,"Selenium, Java, Jenkins",Brazil,"Portuguese, English"
-Natalie Harris,natalie.harris,BA,3 years,Mid,B.A. in Business Administration,"Jira, Trello, Confluence",Brazil,"Portuguese, English"
-David Wright,david.wright,Manager,5 years,Mid,B.Sc. in Information Systems,"MS Project, Asana, Confluence",Brazil,"Portuguese, English"
-Megan Lopez,megan.lopez,Manager,8 years,Senior,MBA in Project Management,"Jira, Monday.com, GitHub Projects",Brazil,"Portuguese, English"
-Joshua Green,joshua.green,Manager,10 years,Senior,B.Sc. in Software Engineering,"Azure DevOps, Confluence, Miro",USA,"English, Spanish"
-Rachel Adams,rachel.adams,BA,12 years,Senior,M.Sc. in Business Analytics,"Jira, Trello, ClickUp",UK,"English, French"
-Hannah Mitchell,hannah.mitchell,Dev,2 years,Junior,B.Sc. in Information Systems,"AWS, Terraform, GitLab CI/CD",Brazil,"Portuguese, English"
-Ryan Carter,ryan.carter,Dev,4 years,Mid,B.Sc. in Computer Science,"Azure, Docker, Jenkins",Brazil,"Portuguese, English"
-Victoria Perez,victoria.perez,Tech lead,7 years,Senior,M.Sc. in Cloud Computing,"GCP, Kubernetes, Ansible",Brazil,"Portuguese, English"
-Ethan Phillips,ethan.phillips,Tech lead,10 years,Senior,B.Sc. in Software Engineering,"AWS, Kubernetes, Terraform",USA,"English, German"
-Amanda Collins,amanda.collins,Tech lead,13 years,Senior,M.Sc. in Systems Architecture,"Azure, Docker, Helm",Canada,"English, French"
-Thomas Brooks,thomas.brooks,BA,6 years,Mid,B.Sc. in Information Systems,"BPMN, SQL, Power BI",UK,"English, Italian"
-Amy Scott,amy.scott,BA,5 years,Mid,B.A. in Economics,"Jira, Miro, Figma",Australia,"English, Japanese"
-Zoe Turner,zoe.turner,BA,7 years,Mid,M.Sc. in Data Analytics,"Confluence, Tableau, SQL",Brazil,"Portuguese, English"
-Connor Hughes,connor.hughes,BA,9 years,Senior,B.Sc. in Business Information Systems,"Jira, Lucidchart, Snowflake",USA,"English, Spanish"
-Samantha Price,samantha.price,BA,11 years,Senior,MBA in Business Intelligence,"Roadmapping, Aha!, Power BI",Brazil,"Portuguese, English"
-Noah Foster,noah.foster,Manager,6 years,Mid,B.Sc. in Industrial Engineering,"OKRs, KPI Design, Notion",Brazil,"Portuguese, English"
-Ava Richardson,ava.richardson,Manager,9 years,Senior,M.Sc. in Technology Management,"Scrum, Kanban, Jira",USA,"English, Italian"
-Lucas Murphy,lucas.murphy,Manager,12 years,Senior,B.Sc. in Computer Science,"Program/Portfolio Mgmt, MS Project",Brazil,"Portuguese, English"
-Evelyn Ward,evelyn.ward,Manager,7 years,Mid,B.A. in Management,"Risk Mgmt, RAID Logs, Confluence",Canada,"English, French"
-Owen Parker,owen.parker,Manager,14 years,Senior,MBA in Operations,"Budgeting, Vendor Mgmt, Salesforce",UK,"English, German"
-Peter Hughes,peter.hughes,QA,7 years,Mid,B.Sc. in Computer Science,"Robot Framework, Python, Docker",Brazil,"Portuguese, English"
-Isabella Reed,isabella.reed,QA,3 years,Mid,B.Sc. in Information Systems,"Playwright, REST Assured, GitHub Actions",Brazil,"Portuguese, English"
-Patrick Barnes,patrick.barnes,Tech lead,11 years,Senior,B.Sc. in Software Engineering,"Java, Kafka, Kubernetes",USA,"English, Italian"
-Julia Cooper,julia.cooper,Tech lead,9 years,Senior,M.Sc. in Computer Science,"Node.js, GraphQL, AWS",Brazil,"Portuguese, English"
-Ethan Gray,ethan.gray,Dev,9 years,Senior,B.Sc. in Computer Science,"Rust, PostgreSQL, gRPC",UK,"English, French"
-Mia Collins,mia.collins,Dev,1 year,Junior,B.Sc. in Software Engineering,"Python, Flask, SQLite",Brazil,"Portuguese, English"
-Henry Powell,henry.powell,Dev,5 years,Mid,B.Sc. in Computer Engineering,"C++, Qt, OpenGL",USA,"English, German"
-Olivia Bennett,olivia.bennett,Dev,8 years,Mid,M.Sc. in Data Engineering,"Scala, Spark, Delta Lake",Brazil,"Portuguese, English"
-Lily Carter,lily.carter,BA,4 years,Mid,B.Sc. in Information Systems,"Jira, Airtable, Requirements Elicitation",Brazil,"Portuguese, English"
-Fernanda Souza,fernanda.souza,HR Manager,8 years,Senior,B.A. in Human Resources,"Talent Acquisition, Employee Engagement, Labor Law",Brazil,"Portuguese, English"
-Thomas Becker,thomas.becker,HR Manager,10 years,Senior,M.Sc. in Human Resource Management,"Organizational Development, Recruitment, Conflict Resolution",Germany,"English, German"
+Nome,Username,Cargo,Senioridade
+Marina Azevedo,marina.azevedo,Founder & Engineer,Senior
+Ana Luísa Teixeira,ana.teixeira,Founder & Researcher,Senior
+Emily Johnson,emily.johnson,Dev,Junior
+Michael Smith,michael.smith,Dev,Junior
+Olivia Brown,olivia.brown,Dev,Mid
+Daniel Miller,daniel.miller,Dev,Mid
+Sophia Wilson,sophia.wilson,Tech lead,Senior
+William Taylor,william.taylor,Tech lead,Senior
+Sarah Anderson,sarah.anderson,Dev,Mid
+James Roberts,james.roberts,Dev,Mid
+Laura Martinez,laura.martinez,Dev,Senior
+Christopher Hall,christopher.hall,Tech lead,Senior
+Elizabeth Thompson,elizabeth.thompson,Tech lead,Senior
+Grace Lewis,grace.lewis,QA,Junior
+Benjamin Walker,benjamin.walker,QA,Junior
+Chloe Young,chloe.young,QA,Mid
+Matthew Allen,matthew.allen,QA,Mid
+Abigail King,abigail.king,QA,Senior
+Andrew Scott,andrew.scott,QA,Senior
+Natalie Harris,natalie.harris,BA,Mid
+David Wright,david.wright,Manager,Mid
+Megan Lopez,megan.lopez,Manager,Senior
+Joshua Green,joshua.green,Manager,Senior
+Rachel Adams,rachel.adams,BA,Senior
+Hannah Mitchell,hannah.mitchell,Dev,Junior
+Ryan Carter,ryan.carter,Dev,Mid
+Victoria Perez,victoria.perez,Tech lead,Senior
+Ethan Phillips,ethan.phillips,Tech lead,Senior
+Amanda Collins,amanda.collins,Tech lead,Senior
+Thomas Brooks,thomas.brooks,BA,Mid
+Amy Scott,amy.scott,BA,Mid
+Zoe Turner,zoe.turner,BA,Mid
+Connor Hughes,connor.hughes,BA,Senior
+Samantha Price,samantha.price,BA,Senior
+Noah Foster,noah.foster,Manager,Mid
+Ava Richardson,ava.richardson,Manager,Senior
+Lucas Murphy,lucas.murphy,Manager,Senior
+Evelyn Ward,evelyn.ward,Manager,Mid
+Owen Parker,owen.parker,Manager,Senior
+Peter Hughes,peter.hughes,QA,Mid
+Isabella Reed,isabella.reed,QA,Mid
+Patrick Barnes,patrick.barnes,Tech lead,Senior
+Julia Cooper,julia.cooper,Tech lead,Senior
+Ethan Gray,ethan.gray,Dev,Senior
+Mia Collins,mia.collins,Dev,Junior
+Henry Powell,henry.powell,Dev,Mid
+Olivia Bennett,olivia.bennett,Dev,Mid
+Lily Carter,lily.carter,BA,Mid
+Fernanda Souza,fernanda.souza,HR Manager,Senior
+Thomas Becker,thomas.becker,HR Manager,Senior
