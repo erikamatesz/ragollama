@@ -4,15 +4,11 @@ Llama Del Rey - Indexer
 Este script percorre a pasta ./docs, lê PDFs e CSVs, divide o conteúdo em
 chunks, gera embeddings no Ollama e salva um índice FAISS em ./data.
 Também cria um meta.jsonl com os metadados de cada chunk.
-
-Fluxo:
-1) Ler arquivos (PDF/CSV) de ./docs
-2) Extrair texto e "chunkar" (PDF por caracteres; CSV 1 linha = 1 chunk)
-3) Gerar embeddings (Ollama /api/embeddings)
-4) Normalizar vetores (L2) e indexar no FAISS (cosine via inner product)
-5) Salvar índice (faiss.index) e metadados (meta.jsonl)
 """
 
+# ============================================================
+# 1) Imports e configuração básica
+# ============================================================
 import os
 import json
 import math
@@ -33,9 +29,8 @@ except Exception:
     pass
 
 # ============================================================
-# Configurações básicas e caminhos
+# 2) Configurações e caminhos (env, modelos, limites)
 # ============================================================
-
 DOCS_DIR = Path("docs")             # Onde ficam os PDFs/CSVs de entrada
 DATA_DIR = Path("data")             # Saída (índice + metadados)
 DATA_DIR.mkdir(exist_ok=True)
@@ -51,28 +46,17 @@ EMBED_MODEL = os.getenv("EMBED_MODEL", "nomic-embed-text")
 # CHUNK_SIZE = quantos caracteres vão em cada pedaço (chunk)
 # CHUNK_OVERLAP = quantos caracteres do final do chunk anterior
 #                 serão repetidos no início do próximo chunk
-#
-# Exemplo visual:
-#
-# Texto original:  [ABCDEFGHIJKLMNOPQRSTUVWXYZ]
-# CHUNK_SIZE = 10
-# CHUNK_OVERLAP = 3
-#
-# Resultado:
-#   Chunk 1: ABCDEFGHIJ
-#             ^^^ (overlap=3)
-#   Chunk 2:       HIJKLMNOPQ
-#                       ^^^ (overlap=3)
-#   Chunk 3:            NOPQRSTUV...
-#
-# Isso garante que se uma frase ou ideia estiver "cortada" no limite,
-# ela apareça inteira em pelo menos um chunk.
+# Ex.: com CHUNK_SIZE=10 e OVERLAP=3, parte do fim do chunk 1
+# reaparece no começo do chunk 2, preservando contexto.
 # -----------------------------------------------------------------
 CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", 800))
 CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", 150))
 
 CSV_MAX_ROWS = int(os.getenv("CSV_MAX_ROWS", 200_000))  # segurança p/ CSV grande
 
+# ============================================================
+# 3) Utilidades de chunking e leitura de fontes
+# ============================================================
 
 def chunk_text(text: str, size: int = CHUNK_SIZE, overlap: int = CHUNK_OVERLAP) -> List[str]:
     """
@@ -151,6 +135,9 @@ def iter_csv_rows_pt(path: Path, max_rows: int = CSV_MAX_ROWS) -> List[str]:
             break
     return rows
 
+# ============================================================
+# 4) Embeddings (Ollama) e normalização L2
+# ============================================================
 
 def embed_texts(texts: List[str]) -> List[List[float]]:
     """
@@ -192,6 +179,9 @@ def l2_normalize(vecs: List[List[float]]) -> List[List[float]]:
         out.append([x / norm for x in v])
     return out
 
+# ============================================================
+# 5) Varredura de documentos → produção de chunks com metadados
+# ============================================================
 
 def iter_docs(doc_dir: Path) -> List[Tuple[str, str, int, str, str]]:
     """
@@ -239,6 +229,9 @@ def iter_docs(doc_dir: Path) -> List[Tuple[str, str, int, str, str]]:
 
     return items
 
+# ============================================================
+# 6) Pipeline principal (gera vetores, monta índice, salva)
+# ============================================================
 
 def main():
     """
